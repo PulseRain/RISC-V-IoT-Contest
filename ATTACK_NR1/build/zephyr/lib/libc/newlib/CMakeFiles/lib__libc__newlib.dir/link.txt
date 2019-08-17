@@ -1,0 +1,2 @@
+ccache /opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-ar qc liblib__libc__newlib.a  CMakeFiles/lib__libc__newlib.dir/libc-hooks.c.obj
+ccache /opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-ranlib liblib__libc__newlib.a

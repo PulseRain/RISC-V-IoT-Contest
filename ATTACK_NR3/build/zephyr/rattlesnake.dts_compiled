@@ -1,0 +1,55 @@
+/dts-v1/;
+
+/ {
+	#address-cells = <0x01>;
+	#size-cells = <0x01>;
+	model = "rattlesnake_riscv32";
+	compatible = "rattlesnake,riscv32";
+
+	chosen {
+		zephyr,sram = "/memory@80004000";
+		zephyr,flash = "/flash@80000000";
+		zephyr,console = "/soc/uart@20000010";
+	};
+
+	aliases {
+		uart_0 = "/soc/uart@20000010";
+	};
+
+	cpus {
+		#address-cells = <0x01>;
+		#size-cells = <0x00>;
+
+		cpu@0 {
+			device_type = "cpu";
+			compatible = "qemu,riscv32";
+			reg = <0x00>;
+		};
+	};
+
+	flash0: flash@80000000 {
+		reg = <0x80000000 0x4000>;
+	};
+
+	sram0: memory@80004000 {
+		device_type = "memory";
+		compatible = "mmio-sram";
+		reg = <0x80004000 0xc000>;
+	};
+
+	soc {
+		#address-cells = <0x01>;
+		#size-cells = <0x01>;
+		compatible = "simple-bus";
+		ranges;
+
+		uart0: uart@20000010 {
+			compatible = "riscv,rattlesnake-uart";
+			reg = <0x70000000 0x1000>;
+			label = "uart0";
+			status = "okay";
+			current-speed = <0x1c200>;
+			clock-frequency = <0x2faf080>;
+		};
+	};
+};

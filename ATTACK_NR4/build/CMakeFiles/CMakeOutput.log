@@ -1,0 +1,50 @@
+The target system is: Generic - 1.14.1 - riscv32
+The host system is: Linux - 4.9.0-4-amd64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lenovo/RISC-V-IoT-Contest/ATTACK_NR4/build/CMakeFiles/3.15.0/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lenovo/RISC-V-IoT-Contest/ATTACK_NR4/build/CMakeFiles/3.15.0/CompilerIdCXX/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+riscv32-zephyr-elf-gcc (crosstool-NG 1.24.0-rc2-dirty) 8.3.0
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Performing C SOURCE FILE Test toolchain_is_ok succeeded with the following output:
+Change Dir: /home/lenovo/RISC-V-IoT-Contest/ATTACK_NR4/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ca006/fast && /usr/bin/make -f CMakeFiles/cmTC_ca006.dir/build.make CMakeFiles/cmTC_ca006.dir/build
+make[1]: Entering directory '/home/lenovo/RISC-V-IoT-Contest/ATTACK_NR4/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca006.dir/src.c.obj
+/opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-gcc   -Dtoolchain_is_ok -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/riscv32-zephyr-elf/bin/../lib/gcc/riscv32-zephyr-elf/8.3.0/include" -isystem "/opt/zephyr-sdk/riscv32-zephyr-elf/bin/../lib/gcc/riscv32-zephyr-elf/8.3.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -o CMakeFiles/cmTC_ca006.dir/src.c.obj   -c /home/lenovo/RISC-V-IoT-Contest/ATTACK_NR4/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ca006
+/home/lenovo/cmake/cmake-3.8.2-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca006.dir/link.txt --verbose=1
+/opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-gcc  -Dtoolchain_is_ok -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/riscv32-zephyr-elf/bin/../lib/gcc/riscv32-zephyr-elf/8.3.0/include" -isystem "/opt/zephyr-sdk/riscv32-zephyr-elf/bin/../lib/gcc/riscv32-zephyr-elf/8.3.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_ca006.dir/src.c.obj  -o cmTC_ca006 
+/opt/zephyr-sdk/riscv32-zephyr-elf/bin/../lib/gcc/riscv32-zephyr-elf/8.3.0/../../../../riscv32-zephyr-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
+make[1]: Leaving directory '/home/lenovo/RISC-V-IoT-Contest/ATTACK_NR4/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }

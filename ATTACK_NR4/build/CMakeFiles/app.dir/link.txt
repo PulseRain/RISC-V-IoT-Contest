@@ -1,0 +1,2 @@
+ccache /opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-ar qc app/libapp.a  CMakeFiles/app.dir/src/ripe_attack_generator.c.obj
+ccache /opt/zephyr-sdk/riscv32-zephyr-elf/bin/riscv32-zephyr-elf-ranlib app/libapp.a
