@@ -11,7 +11,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_C
-  "BUILD_VERSION=zephyr-v1.14.1-rc1-1-gd84996362d74"
+  "BUILD_VERSION=zephyr-v1.14.1-rc1-2-g936510fd3ed7"
   "KERNEL"
   "_FORTIFY_SOURCE=2"
   "__LINUX_ERRNO_EXTENSIONS__"
